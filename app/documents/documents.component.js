@@ -5,7 +5,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var DocumentsComponent = (function () {
     function DocumentsComponent() {
@@ -16,21 +15,21 @@ var DocumentsComponent = (function () {
                 description: 'This and that description',
                 file_url: 'http://google.com',
                 updated_at: '03/02/17',
-                image_url: 'http://google.com',
+                image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Mistakes-to-avoid-when-hiring-freelancers.jpg/320px-Mistakes-to-avoid-when-hiring-freelancers.jpg',
             },
             {
                 title: 'My Second Doc',
                 description: 'This and that description',
                 file_url: 'http://google.com',
                 updated_at: '03/02/17',
-                image_url: 'http://google.com',
+                image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Mistakes-to-avoid-when-hiring-freelancers.jpg/320px-Mistakes-to-avoid-when-hiring-freelancers.jpg',
             },
             {
                 title: 'My Last Doc',
                 description: 'This and that description',
                 file_url: 'http://google.com',
                 updated_at: '03/02/17',
-                image_url: 'http://google.com',
+                image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Mistakes-to-avoid-when-hiring-freelancers.jpg/320px-Mistakes-to-avoid-when-hiring-freelancers.jpg',
             }
         ];
     }
@@ -40,7 +39,8 @@ DocumentsComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'documents',
-        templateUrl: 'documents.component.html'
+        templateUrl: 'documents.component.html',
+        styleUrls: ['documents.component.css']
     })
 ], DocumentsComponent);
 exports.DocumentsComponent = DocumentsComponent;

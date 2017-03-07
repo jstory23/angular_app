@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
@@ -14,25 +15,26 @@ import { ProposalShowComponent } from './proposal/proposal-show.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    NgbModule.forRoot()
-  ],
-  declarations: [
-    AppComponent,
-    HomepageComponent,
-    DocumentsComponent,
-    ProposalListComponent,
-    ProposalNewComponent,
-    ProposalShowComponent,
-  ],
-  providers: [
-    DocumentService
-  ],
-  bootstrap: [
-    AppComponent
-  ]
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		FormsModule,
+		NgbModule.forRoot(),
+		HttpModule
+	],
+	declarations: [
+		AppComponent,
+		HomepageComponent,
+		DocumentsComponent,
+		ProposalListComponent,
+		ProposalNewComponent,
+		ProposalShowComponent
+	],
+	providers: [
+		DocumentService
+	],
+	bootstrap: [
+		AppComponent
+	]
 })
 export class AppModule {}
